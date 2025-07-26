@@ -31,7 +31,7 @@ results = []
 # Core logic loop
 for symbol in stock_list:
     try:
-        df = yf.download(symbol, interval="5m", period="10m", progress=False)
+        df = yf.download(symbol, interval="5m", period="5d", progress=False)
         if len(df) < 2:
             continue
 
